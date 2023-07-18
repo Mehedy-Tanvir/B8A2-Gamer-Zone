@@ -1,0 +1,77 @@
+/* shared styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+.color-primary {
+  background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* nav styles */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 681.96px;
+  margin-top: 37px;
+}
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.brand-logo {
+  height: 40px;
+}
+.brand-name {
+  color: #0b0223;
+  font-family: Work Sans;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 32px;
+}
+nav ul li {
+  color: #3c354f;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.follow {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  width: 265px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.1);
+  padding: 18px 24px;
+}
+.follow-logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.follow-p {
+  color: #3c354f;
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
