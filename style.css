@@ -75,3 +75,21 @@ nav ul li {
   font-weight: 500;
   line-height: normal;
 }
+
+/* responsive styles */
+/* mobile devices */
+@media screen and (max-width: 576px) {
+  /* nav section */
+  nav {
+    flex-direction: column;
+    gap: 62px;
+    margin-top: 103px;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 36px;
+  }
+  .follow {
+    margin-top: 26px;
+  }
+}
