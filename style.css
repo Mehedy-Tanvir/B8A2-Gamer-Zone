@@ -11,6 +11,9 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.color-white {
+  color: #fff;
+}
 .btn-primary {
   border-radius: 48px;
   background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
@@ -313,6 +316,115 @@ nav ul li {
   bottom: 0px;
   left: 65.17px;
   transform: translateX(-50%);
+}
+/* category styles */
+.category {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+  margin-bottom: 118.83px;
+}
+.category-container {
+  width: 100%;
+  max-width: 1400px;
+}
+.upper-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 27px;
+}
+.lower-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 29px;
+}
+.game-type {
+  width: 243px;
+  height: 80px;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px 10px 10px;
+  gap: 16px;
+  border-radius: 50px;
+  background: #fff;
+  border: 2px solid transparent;
+}
+.game-type p {
+  color: #0b0223;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.game-type:hover {
+  border: 2px solid #ff42a5;
+}
+.game-type:hover p {
+  background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* footer section styles */
+footer {
+  background-color: #0b0223;
+  height: 636px;
+  padding-top: 120px;
+}
+.footer-brand {
+  text-align: center;
+  margin-bottom: 56px;
+}
+.footer-support {
+  margin-bottom: 56px;
+}
+.footer-support,
+.policy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+.footer-support p {
+  color: #fff;
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.footer-button {
+  text-align: center;
+  margin-bottom: 74px;
+}
+.footer-button button {
+  background-color: transparent;
+  border: none;
+  margin-left: 40px;
+  cursor: pointer;
+}
+.policy {
+  margin-bottom: 74px;
+}
+.policy p {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.copyright {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 /* responsive styles */
