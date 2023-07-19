@@ -230,11 +230,39 @@ nav ul li {
   justify-content: center;
   gap: 24px;
 }
+.card-img-container {
+  position: relative;
+  cursor: pointer;
+}
 .card img {
   width: 342px;
   height: 400px;
   flex-shrink: 0;
 }
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 342px;
+  height: 100%;
+  border-radius: 16px;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.play-icon img {
+  width: 100px;
+  color: #fff;
+}
+
+.card-img-container:hover .overlay {
+  opacity: 1;
+}
+
 .card p {
   width: 342px;
   color: #534c64;
@@ -532,6 +560,14 @@ footer {
     width: 250px;
     height: auto;
   }
+  .overlay {
+    width: 250px;
+    border-radius: 16px;
+  }
+
+  .play-icon img {
+    width: 50px;
+  }
   .card p {
     width: 250px;
     font-size: 12px;
@@ -735,9 +771,35 @@ footer {
     width: 250px;
     margin: 12px auto 20px;
   }
+  .card-img-container {
+    position: relative;
+    cursor: pointer;
+  }
   .card img {
     width: 250px;
     height: auto;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .play-icon img {
+    width: 100px;
+    color: #fff;
+  }
+
+  .image-container:hover .overlay {
+    opacity: 1;
   }
   .card p {
     width: 250px;
