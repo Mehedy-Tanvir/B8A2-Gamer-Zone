@@ -45,10 +45,17 @@
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   height: 90px;
   background: #fff;
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+.nav-container {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .nav-brand {
   display: flex;
@@ -109,34 +116,51 @@ nav ul li {
 /* banner section styles */
 .banner {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 700px;
-}
-.banner-text-container {
   background-image: url("./images/Group14.png");
   fill: linear-gradient(
     223deg,
     rgba(140, 87, 238, 0.03) 0%,
     rgba(241, 68, 174, 0.03) 100%
   );
-  background-position: center;
-  background-size: cover;
-  width: 50vw;
+  background-position: left top;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.banner-container {
+  width: 100%;
+  max-width: 1400px;
   height: 700px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
 }
+/* .banner-text-container {
+    background-image: url("./images/Group14.png");
+    fill: linear-gradient(
+      223deg,
+      rgba(140, 87, 238, 0.03) 0%,
+      rgba(241, 68, 174, 0.03) 100%
+    );
+    background-position: center;
+    background-size: cover;
+    width: 50vw;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
 .banner-img-container {
-  width: 50vw;
-  height: 700px;
+  width: 50%;
+  /* height: 700px; */
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
 }
 .banner-img {
-  height: 681px;
+  max-height: 681px;
 }
 .banner-header {
   color: #0b0223;
@@ -191,11 +215,14 @@ nav ul li {
 @media screen and (max-width: 576px) {
   /* nav section */
   nav {
+    box-shadow: none;
+    height: auto;
+    margin-bottom: 78px;
+  }
+  .nav-container {
     flex-direction: column;
     gap: 62px;
     margin-top: 103px;
-    box-shadow: none;
-    height: auto;
   }
   nav ul {
     flex-direction: column;
@@ -206,24 +233,27 @@ nav ul li {
   }
   /* banner section */
   .banner {
+    background-position: left bottom;
+    background-size: 100% auto;
+  }
+  .banner-container {
     flex-direction: column-reverse;
-    margin-top: 78px;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
   }
   .banner-img-container {
-    width: 300px;
-    height: 300px;
+    height: 50%;
     justify-content: center;
     align-items: center;
   }
   .banner-img {
-    height: 300px;
-    width: 300px;
+    height: 100%;
   }
   .banner-text-container {
-    width: 400px;
-    height: auto;
-    padding: 20px 10px;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .banner-header {
     font-size: 28px;
