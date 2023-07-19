@@ -500,6 +500,9 @@ footer {
     font-size: 16px;
   }
   /* online game section */
+  .online-games {
+    margin-bottom: 60px;
+  }
   .online-games-container {
     max-width: 320px;
   }
@@ -529,5 +532,45 @@ footer {
     width: 250px;
     font-size: 12px;
     line-height: normal;
+  }
+  /* instant section */
+  .instant-container {
+    max-width: 320px;
+    height: auto;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .instant-text-container {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .instant-img-container {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .instant-title {
+    font-size: 28px;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .instant-description {
+    font-size: 12px;
+    line-height: normal;
+    width: 200px;
+    text-align: center;
+  }
+  .img-big {
+    width: 270px;
+    height: auto;
+  }
+  .img-small {
+    width: 100px;
+    height: auto;
+
+    left: 50px;
+    top: 180px;
+    bottom: 0px;
   }
 }
