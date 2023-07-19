@@ -426,6 +426,9 @@ footer {
   font-weight: 500;
   line-height: normal;
 }
+.hide {
+  display: none;
+}
 
 /* responsive styles */
 /* mobile devices */
@@ -440,6 +443,7 @@ footer {
     flex-direction: column;
     gap: 62px;
     margin-top: 103px;
+    max-width: 320px;
   }
   nav ul {
     flex-direction: column;
@@ -457,6 +461,7 @@ footer {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+    max-width: 320px;
   }
   .banner-img-container {
     height: 50%;
@@ -493,5 +498,36 @@ footer {
     padding: 11px 20px;
     gap: 5px;
     font-size: 16px;
+  }
+  /* online game section */
+  .online-games-container {
+    max-width: 320px;
+  }
+  .online-card-container {
+    flex-direction: column;
+
+    align-items: center;
+    gap: 24px;
+  }
+  .online-title {
+    font-size: 24px;
+    width: 250px;
+    margin: 0 auto;
+  }
+  .online-description {
+    text-align: center;
+    font-size: 12px;
+    line-height: normal;
+    width: 250px;
+    margin: 12px auto 20px;
+  }
+  .card img {
+    width: 250px;
+    height: auto;
+  }
+  .card p {
+    width: 250px;
+    font-size: 12px;
+    line-height: normal;
   }
 }
