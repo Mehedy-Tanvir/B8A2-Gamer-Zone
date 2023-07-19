@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-family: "Work Sans", sans-serif;
 }
+.mobile-hide {
+  display: block;
+}
 .color-primary {
   background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
   background-clip: text;
@@ -383,6 +386,7 @@ nav ul li {
 }
 /* footer section styles */
 footer {
+  width: 100%;
   background-color: #0b0223;
   height: 636px;
   padding-top: 120px;
@@ -465,6 +469,9 @@ footer {
 /* responsive styles */
 /* mobile devices */
 @media screen and (max-width: 576px) {
+  .mobile-hide {
+    display: none;
+  }
   /* nav section */
   nav {
     box-shadow: none;
@@ -614,21 +621,60 @@ footer {
     bottom: 0px;
   }
 
-  /* category styles */
+  /* category for mobile */
   .category {
-    margin-top: 120px;
+    display: none;
+  }
+  .hide {
+    display: block;
+  }
+  .mobile-category {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
     margin-bottom: 60px;
   }
-  .category-container {
-    max-width: 320px;
+  .mobile-category-container {
+    width: 100%;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(3, 106.67px);
+    grid-template-rows: repeat(3, 100px);
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
   }
-  .upper-container {
-    flex-direction: column;
-    gap: 16px;
+  .mobile-game-type {
+    width: 81px;
+    height: 40px;
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    padding: 3.33px 6.67px 3.33px 3.33px;
+    gap: 2px;
+    border-radius: 50px;
+    background: #fff;
+    border: 2px solid transparent;
+    transition: border 0.1s ease-in-out, color 0.1s ease-in-out;
   }
-  .lower-container {
-    flex-direction: column;
-    gap: 16px;
+  .mobile-game-type img {
+    width: 20px;
+  }
+  .mobile-game-type p {
+    color: #0b0223;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .mobile-game-type:hover {
+    border: 2px solid #ff42a5;
+  }
+  .mobile-game-type:hover p {
+    background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   /* footer section styles */
@@ -908,5 +954,8 @@ footer {
   .copyright {
     width: 150px;
     margin: 0 auto;
+  }
+  .mobile-hide {
+    display: none;
   }
 }
