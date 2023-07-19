@@ -204,6 +204,7 @@ nav ul li {
   display: flex;
   justify-content: center;
   margin-bottom: 120px;
+  margin-top: 120px;
 }
 .online-games-container {
   width: 100%;
@@ -541,6 +542,7 @@ footer {
   /* online game section */
   .online-games {
     margin-bottom: 60px;
+    margin-top: 60px;
   }
   .online-games-container {
     max-width: 320px;
@@ -795,6 +797,7 @@ footer {
   /* online game section */
   .online-games {
     margin-bottom: 60px;
+    margin-top: 60px;
   }
   .online-games-container {
     max-width: 320px;
@@ -901,16 +904,19 @@ footer {
     flex-shrink: 0;
     display: inline-flex;
     align-items: center;
-    padding: 10px 20px 10px 10px;
-    gap: 16px;
+    padding: 5px 10px 5px 5px;
+    gap: 5px;
     border-radius: 50px;
     background: #fff;
     border: 2px solid transparent;
     transition: border 0.1s ease-in-out, color 0.1s ease-in-out;
   }
+  .mobile-game-type img {
+    width: 40px;
+  }
   .mobile-game-type p {
     color: #0b0223;
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
