@@ -262,6 +262,27 @@ nav ul li {
   width: 100px;
   color: #fff;
 }
+.watch-now {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.watch-now {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 6px 12px;
+  border-radius: 12px;
+}
 
 .card-img-container:hover .overlay {
   opacity: 1;
